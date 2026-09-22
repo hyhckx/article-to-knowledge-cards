@@ -1,0 +1,9 @@
+# HTTP 301 and 302 Redirects
+
+When a browser or search engine requests a URL that has moved, the server can answer with a redirect status code instead of a page. Two of the most common codes are 301 and 302.
+
+A 301 status code means "Moved Permanently". The original URL should no longer be used, and clients tend to remember the new location: browsers may cache a 301 so that subsequent visits go straight to the new URL without asking the server again.
+
+A 302 status code means "Found", historically described as a temporary redirect. The resource is temporarily located elsewhere, but the original URL remains valid and should continue to be requested in the future. Browsers therefore do not permanently remember the new location.
+
+For search engine optimization, a 301 generally signals that ranking signals (such as link equity) should be passed to the new URL, because the move is permanent. A 302 usually does not pass those signals in the same way, since the original URL is expected to come back.
